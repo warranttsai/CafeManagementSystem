@@ -1,0 +1,14 @@
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\bin\Debug\CafeManagementSystem.exe.config
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\bin\Debug\CafeManagementSystem.exe
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\bin\Debug\CafeManagementSystem.pdb
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.csproj.AssemblyReference.cache
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.Properties.Resources.resources
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.csproj.GenerateResource.cache
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.csproj.CoreCompileInputs.cache
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.exe
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.pdb
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.Dashboard.resources
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.GuestOrder.resources
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.UserOrder.resources
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.ItemsForm.resources
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.UsersForm.resources
