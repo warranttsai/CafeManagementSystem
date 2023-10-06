@@ -100,5 +100,23 @@ namespace CafeManagementSystem
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if(UphoneTb.Text == "")
+            {
+                MessageBox.Show("Select The User to be Deleted.");
+            }
+            else
+            {
+                Con.Open();
+                string query = "DELETE FROM UsersTbl WHERE Uphone = '" + UphoneTb.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Successfully Deleted.");
+                Con.Close();
+                populate();
+            }
+        }
     }
 }
