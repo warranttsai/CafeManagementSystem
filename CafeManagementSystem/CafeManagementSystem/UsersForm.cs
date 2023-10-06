@@ -75,7 +75,7 @@ namespace CafeManagementSystem
         private void button1_Click(object sender, EventArgs e)
         {
             Con.Open();
-            string query = "insert into UsersTbl values('"+UnameTb.Text+"','"+UphoneTb.Text+"','" +UpasswordTb.Text+"')";
+            string query = "insert into UsersTbl values('" + UnameTb.Text + "','" + UphoneTb.Text + "','" + UpasswordTb.Text + "')";
             SqlCommand cmd = new SqlCommand(query, Con);
             cmd.ExecuteNonQuery();
             MessageBox.Show("User Successfully Created!");
@@ -103,7 +103,7 @@ namespace CafeManagementSystem
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if(UphoneTb.Text == "")
+            if (UphoneTb.Text == "")
             {
                 MessageBox.Show("Select The User to be Deleted.");
             }
@@ -114,6 +114,23 @@ namespace CafeManagementSystem
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("User Successfully Deleted.");
+                Con.Close();
+                populate();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (UphoneTb.Text == "" || UpasswordTb.Text == "" || UnameTb.Text == "")
+            {
+                MessageBox.Show("Please fill in all the fields.");
+            } else
+            {
+                Con.Open();
+                string query = "UPDATE UsersTbl SET Uname = '" + UnameTb.Text + "', Upassword='"+ UpasswordTb.Text +"', Uphone = '" + UphoneTb.Text + "' WHERE Uphone = '" + UphoneTb.Text +"'";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Successfully Edited.");
                 Con.Close();
                 populate();
             }
