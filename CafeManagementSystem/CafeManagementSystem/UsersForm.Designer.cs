@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -131,10 +132,13 @@
             // 
             // UsersGV
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.UsersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsersGV.GridColor = System.Drawing.SystemColors.Control;
-            this.UsersGV.Location = new System.Drawing.Point(269, 110);
+            this.UsersGV.Location = new System.Drawing.Point(281, 110);
             this.UsersGV.Name = "UsersGV";
+            this.UsersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UsersGV.Size = new System.Drawing.Size(316, 285);
             this.UsersGV.TabIndex = 33;
             this.UsersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemGV_CellContentClick);
@@ -246,6 +250,7 @@
             this.UnameTb.Name = "UnameTb";
             this.UnameTb.Size = new System.Drawing.Size(126, 22);
             this.UnameTb.TabIndex = 25;
+            this.UnameTb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.UnameTb_MaskInputRejected);
             // 
             // button2
             // 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CafeManagementSystem
 {
@@ -68,7 +69,7 @@ namespace CafeManagementSystem
 
         private void label7_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,16 +80,25 @@ namespace CafeManagementSystem
             cmd.ExecuteNonQuery();
             MessageBox.Show("User Successfully Created!");
             Con.Close();
+            populate();
         }
 
         private void ItemGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-      
+            UnameTb.Text = UsersGV.SelectedRows[0].Cells[0].Value.ToString();
+            UphoneTb.Text = UsersGV.SelectedRows[0].Cells[1].Value.ToString();
+            UpasswordTb.Text = UsersGV.SelectedRows[0].Cells[2].Value.ToString();
+
         }
 
         private void UsersForm_Load(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void UnameTb_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
