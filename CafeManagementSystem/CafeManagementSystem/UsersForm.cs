@@ -88,7 +88,6 @@ namespace CafeManagementSystem
             UnameTb.Text = UsersGV.SelectedRows[0].Cells[0].Value.ToString();
             UphoneTb.Text = UsersGV.SelectedRows[0].Cells[1].Value.ToString();
             UpasswordTb.Text = UsersGV.SelectedRows[0].Cells[2].Value.ToString();
-
         }
 
         private void UsersForm_Load(object sender, EventArgs e)
