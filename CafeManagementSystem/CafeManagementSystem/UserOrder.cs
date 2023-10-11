@@ -133,6 +133,7 @@ namespace CafeManagementSystem
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
+            Datelbl.Text = DateTime.Today.Date.ToString();
         }
         private void ItemGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

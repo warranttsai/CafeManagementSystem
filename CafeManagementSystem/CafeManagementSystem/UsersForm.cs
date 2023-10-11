@@ -93,6 +93,7 @@ namespace CafeManagementSystem
         private void UsersForm_Load(object sender, EventArgs e)
         {
             populate();
+            Datelbl.Text = DateTime.Today.Date.ToString();
         }
 
         private void UnameTb_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -133,6 +134,11 @@ namespace CafeManagementSystem
                 Con.Close();
                 populate();
             }
+        }
+
+        private void Datelbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

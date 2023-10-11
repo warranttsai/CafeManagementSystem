@@ -34,8 +34,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.UnameTb = new System.Windows.Forms.MaskedTextBox();
+            this.PasswordTb = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -113,20 +113,21 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "UserName";
             // 
-            // maskedTextBox1
+            // UnameTb
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(99, 100);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 3;
+            this.UnameTb.Location = new System.Drawing.Point(99, 100);
+            this.UnameTb.Name = "UnameTb";
+            this.UnameTb.Size = new System.Drawing.Size(100, 20);
+            this.UnameTb.TabIndex = 3;
+            this.UnameTb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.UnameTb_MaskInputRejected);
             // 
-            // maskedTextBox2
+            // PasswordTb
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(99, 132);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 5;
-            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
+            this.PasswordTb.Location = new System.Drawing.Point(99, 132);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(100, 20);
+            this.PasswordTb.TabIndex = 5;
+            this.PasswordTb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // label3
             // 
@@ -174,9 +175,9 @@
             this.ClientSize = new System.Drawing.Size(613, 323);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.UnameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -184,6 +185,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -196,8 +198,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox UnameTb;
+        private System.Windows.Forms.MaskedTextBox PasswordTb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;

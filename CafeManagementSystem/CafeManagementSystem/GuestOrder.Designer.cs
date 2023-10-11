@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Datelbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.Datelbl);
             this.panel1.Controls.Add(this.QuantityTb);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
@@ -69,7 +71,7 @@
             // QuantityTb
             // 
             this.QuantityTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityTb.Location = new System.Drawing.Point(271, 206);
+            this.QuantityTb.Location = new System.Drawing.Point(271, 190);
             this.QuantityTb.Name = "QuantityTb";
             this.QuantityTb.Size = new System.Drawing.Size(126, 22);
             this.QuantityTb.TabIndex = 23;
@@ -95,7 +97,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(319, 233);
+            this.label3.Location = new System.Drawing.Point(319, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 24);
             this.label3.TabIndex = 21;
@@ -105,10 +107,10 @@
             // OrdersGV
             // 
             this.OrdersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGV.Location = new System.Drawing.Point(189, 260);
+            this.OrdersGV.Location = new System.Drawing.Point(189, 244);
             this.OrdersGV.Name = "OrdersGV";
             this.OrdersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrdersGV.Size = new System.Drawing.Size(363, 138);
+            this.OrdersGV.Size = new System.Drawing.Size(363, 154);
             this.OrdersGV.TabIndex = 20;
             this.OrdersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -118,9 +120,9 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(403, 204);
+            this.button1.Location = new System.Drawing.Point(403, 188);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 24);
+            this.button1.Size = new System.Drawing.Size(92, 26);
             this.button1.TabIndex = 19;
             this.button1.Text = "Add To Cart";
             this.button1.UseVisualStyleBackColor = false;
@@ -144,7 +146,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(126, 22);
             this.maskedTextBox1.TabIndex = 17;
-            this.maskedTextBox1.Text = " Select Name";
+            this.maskedTextBox1.Text = "Guest";
             // 
             // maskedTextBox2
             // 
@@ -161,7 +163,7 @@
             this.ItemsGV.Location = new System.Drawing.Point(189, 39);
             this.ItemsGV.Name = "ItemsGV";
             this.ItemsGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ItemsGV.Size = new System.Drawing.Size(363, 162);
+            this.ItemsGV.Size = new System.Drawing.Size(363, 145);
             this.ItemsGV.TabIndex = 14;
             this.ItemsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemsGV_CellContentClick);
             // 
@@ -216,6 +218,18 @@
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.Datelbl.Location = new System.Drawing.Point(448, 16);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(34, 16);
+            this.Datelbl.TabIndex = 24;
+            this.Datelbl.Text = "Date";
+            this.Datelbl.Click += new System.EventHandler(this.label2_Click_1);
+            // 
             // GuestOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -257,5 +271,6 @@
         private System.Windows.Forms.DataGridView OrdersGV;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox QuantityTb;
+        private System.Windows.Forms.Label Datelbl;
     }
 }

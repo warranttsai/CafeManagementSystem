@@ -101,6 +101,7 @@ namespace CafeManagementSystem
         private void ItemsForm_Load(object sender, EventArgs e)
         {
             populate();
+            Datelbl.Text = DateTime.Today.Date.ToString();
         }
         public static string id;
         private void button5_Click(object sender, EventArgs e)

@@ -135,6 +135,11 @@ namespace CafeManagementSystem
             flag = 1;
         }
 
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         string item, cat, itemName;
         private void GuestOrder_Load(object sender, EventArgs e)
         {
@@ -145,6 +150,7 @@ namespace CafeManagementSystem
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
+            Datelbl.Text = DateTime.Today.Date.ToString();
         }
 
         private void CatCb_SelectedIndexChanged(object sender, EventArgs e)
