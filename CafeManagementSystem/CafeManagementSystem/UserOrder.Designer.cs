@@ -31,6 +31,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AmtLbl = new System.Windows.Forms.Label();
+            this.UnitLbl = new System.Windows.Forms.Label();
             this.Datelbl = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.QuantityTb = new System.Windows.Forms.MaskedTextBox();
@@ -46,8 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.UnitLbl = new System.Windows.Forms.Label();
-            this.AmtLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -59,7 +59,7 @@
             this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(715, 16);
+            this.label7.Location = new System.Drawing.Point(763, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 27);
             this.label7.TabIndex = 14;
@@ -102,6 +102,27 @@
             this.panel1.Size = new System.Drawing.Size(600, 436);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // AmtLbl
+            // 
+            this.AmtLbl.AutoSize = true;
+            this.AmtLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.AmtLbl.Location = new System.Drawing.Point(512, 405);
+            this.AmtLbl.Name = "AmtLbl";
+            this.AmtLbl.Size = new System.Drawing.Size(0, 24);
+            this.AmtLbl.TabIndex = 41;
+            // 
+            // UnitLbl
+            // 
+            this.UnitLbl.AutoSize = true;
+            this.UnitLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnitLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.UnitLbl.Location = new System.Drawing.Point(454, 403);
+            this.UnitLbl.Name = "UnitLbl";
+            this.UnitLbl.Size = new System.Drawing.Size(52, 24);
+            this.UnitLbl.TabIndex = 38;
+            this.UnitLbl.Text = "AUD";
             // 
             // Datelbl
             // 
@@ -172,6 +193,7 @@
             this.OrdersGV.Name = "OrdersGV";
             this.OrdersGV.Size = new System.Drawing.Size(363, 161);
             this.OrdersGV.TabIndex = 20;
+            this.OrdersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OrdersGV_CellContentClick);
             // 
             // button1
             // 
@@ -278,33 +300,12 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // UnitLbl
-            // 
-            this.UnitLbl.AutoSize = true;
-            this.UnitLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnitLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.UnitLbl.Location = new System.Drawing.Point(454, 403);
-            this.UnitLbl.Name = "UnitLbl";
-            this.UnitLbl.Size = new System.Drawing.Size(52, 24);
-            this.UnitLbl.TabIndex = 38;
-            this.UnitLbl.Text = "AUD";
-            // 
-            // AmtLbl
-            // 
-            this.AmtLbl.AutoSize = true;
-            this.AmtLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.AmtLbl.Location = new System.Drawing.Point(512, 405);
-            this.AmtLbl.Name = "AmtLbl";
-            this.AmtLbl.Size = new System.Drawing.Size(0, 24);
-            this.AmtLbl.TabIndex = 41;
-            // 
             // UserOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
-            this.ClientSize = new System.Drawing.Size(784, 496);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label7);

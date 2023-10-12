@@ -143,7 +143,14 @@ namespace CafeManagementSystem
             cmd.ExecuteNonQuery();
             MessageBox.Show("Order Successfully Created!");
             Con.Close();
+            // Refresh the data
             populate();
+            populateOrders();
+        }
+
+        private void OrdersGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
 
         DataTable table = new DataTable();
@@ -151,13 +158,18 @@ namespace CafeManagementSystem
         private void UserOrder_Load(object sender, EventArgs e)
         {
             populate();
+            // Setting Orders Grid View data
             table.Columns.Add("Num", typeof(int));
             table.Columns.Add("Item", typeof(string));
             table.Columns.Add("Category", typeof(string));
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
+            populateOrders();
+            // Setting date label
             Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
+            // Replace the text of Seller TextBox to user name
+            SellerNameTb.Text = Dashboard.user;
         }
         private void ItemGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

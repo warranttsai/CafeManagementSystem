@@ -105,10 +105,9 @@ namespace CafeManagementSystem
         }
 
         int num, amount = 0;
-        int price, qty, total;
+        int price, total;
         DataTable table = new DataTable();
         int flag = 0;
-        int sum = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             if (QuantityTb.Text == "")
@@ -170,6 +169,8 @@ namespace CafeManagementSystem
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
             Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
+            // Replace the text of Guest TextBox to user name
+            GuestTb.Text = Dashboard.user;
         }
 
         private void CatCb_SelectedIndexChanged(object sender, EventArgs e)

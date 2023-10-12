@@ -49,12 +49,11 @@ namespace CafeManagementSystem
             GuestOrder guest = new GuestOrder();
             guest.Show();
         }
-
+        public static string user;
         private void button1_Click(object sender, EventArgs e)
         {
-            // this.Hide();
-            // UserOrder uorder = new UserOrder();
-            // uorder.Show();
+            // Login Button
+            user = UnameTb.Text;
             if(UnameTb.Text == "" || PasswordTb.Text =="")
             {
                 MessageBox.Show("Enter A Username Or Password.");
@@ -84,6 +83,11 @@ namespace CafeManagementSystem
         }
 
         private void UnameTb_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
