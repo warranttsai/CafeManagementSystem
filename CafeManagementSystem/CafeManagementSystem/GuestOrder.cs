@@ -159,6 +159,12 @@ namespace CafeManagementSystem
         }
 
         string cat, itemName;
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
         private void GuestOrder_Load(object sender, EventArgs e)
         {
             populate();

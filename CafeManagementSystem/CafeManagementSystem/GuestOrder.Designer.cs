@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.AmtLbl = new System.Windows.Forms.Label();
             this.UnitLbl = new System.Windows.Forms.Label();
             this.OrderAmtLbl = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -76,6 +76,20 @@
             this.panel1.Size = new System.Drawing.Size(600, 450);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkBlue;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(70, 70);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(61, 25);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "Refresh";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // AmtLbl
             // 
@@ -269,19 +283,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DarkBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(70, 70);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 25);
-            this.button5.TabIndex = 41;
-            this.button5.Text = "Refresh";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // GuestOrder
             // 
