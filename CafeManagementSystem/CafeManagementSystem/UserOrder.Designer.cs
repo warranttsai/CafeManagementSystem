@@ -31,6 +31,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Datelbl = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.QuantityTb = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,7 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.Datelbl = new System.Windows.Forms.Label();
+            this.UnitLbl = new System.Windows.Forms.Label();
+            this.AmtLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -80,6 +82,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.AmtLbl);
+            this.panel1.Controls.Add(this.UnitLbl);
             this.panel1.Controls.Add(this.Datelbl);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.QuantityTb);
@@ -95,8 +99,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(140, 48);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 432);
+            this.panel1.Size = new System.Drawing.Size(600, 436);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.Datelbl.Location = new System.Drawing.Point(462, 16);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(34, 16);
+            this.Datelbl.TabIndex = 37;
+            this.Datelbl.Text = "Date";
             // 
             // button5
             // 
@@ -128,7 +144,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(349, 401);
+            this.button2.Location = new System.Drawing.Point(345, 401);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 28);
             this.button2.TabIndex = 22;
@@ -260,16 +276,26 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Datelbl
+            // UnitLbl
             // 
-            this.Datelbl.AutoSize = true;
-            this.Datelbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datelbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Datelbl.Location = new System.Drawing.Point(462, 16);
-            this.Datelbl.Name = "Datelbl";
-            this.Datelbl.Size = new System.Drawing.Size(34, 16);
-            this.Datelbl.TabIndex = 37;
-            this.Datelbl.Text = "Date";
+            this.UnitLbl.AutoSize = true;
+            this.UnitLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnitLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.UnitLbl.Location = new System.Drawing.Point(454, 403);
+            this.UnitLbl.Name = "UnitLbl";
+            this.UnitLbl.Size = new System.Drawing.Size(52, 24);
+            this.UnitLbl.TabIndex = 38;
+            this.UnitLbl.Text = "AUD";
+            // 
+            // AmtLbl
+            // 
+            this.AmtLbl.AutoSize = true;
+            this.AmtLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.AmtLbl.Location = new System.Drawing.Point(512, 405);
+            this.AmtLbl.Name = "AmtLbl";
+            this.AmtLbl.Size = new System.Drawing.Size(0, 24);
+            this.AmtLbl.TabIndex = 41;
             // 
             // UserOrder
             // 
@@ -317,5 +343,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label Datelbl;
+        private System.Windows.Forms.Label UnitLbl;
+        private System.Windows.Forms.Label AmtLbl;
     }
 }

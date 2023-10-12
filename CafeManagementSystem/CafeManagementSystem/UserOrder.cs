@@ -109,7 +109,7 @@ namespace CafeManagementSystem
                 flag = 0;
             }
             amount = amount + total;
-            LabelAmount.Text = " AUD" +amount.ToString() ;
+            AmtLbl.Text = amount.ToString();
         }
 
         private void CatCb_SelectedIndexChanged(object sender, EventArgs e)
@@ -120,6 +120,16 @@ namespace CafeManagementSystem
         private void button5_Click(object sender, EventArgs e)
         {
             populate();
+        }
+        
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         DataTable table = new DataTable();

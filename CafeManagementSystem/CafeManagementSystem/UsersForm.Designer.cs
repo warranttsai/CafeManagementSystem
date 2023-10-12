@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,8 +46,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.UphoneTb = new System.Windows.Forms.MaskedTextBox();
             this.UnameTb = new System.Windows.Forms.MaskedTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
@@ -123,8 +121,6 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.UphoneTb);
             this.panel1.Controls.Add(this.UnameTb);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(156, 48);
             this.panel1.Name = "panel1";
@@ -146,8 +142,8 @@
             // 
             // UsersGV
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.UsersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsersGV.GridColor = System.Drawing.SystemColors.Control;
             this.UsersGV.Location = new System.Drawing.Point(281, 110);
@@ -268,30 +264,6 @@
             this.UnameTb.TabIndex = 25;
             this.UnameTb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.UnameTb_MaskInputRejected);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkBlue;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(319, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 28);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Place The Order";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(448, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 18);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Order Amount";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -345,8 +317,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox UphoneTb;
         private System.Windows.Forms.MaskedTextBox UnameTb;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView UsersGV;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;

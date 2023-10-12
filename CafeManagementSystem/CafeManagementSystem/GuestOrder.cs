@@ -85,7 +85,16 @@ namespace CafeManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // Place The Order Button
+            Guid myuuid = Guid.NewGuid();
+            string myuuidAsString = myuuid.ToString();
+            Con.Open();
+            string query = "insert into OrderTbl values('" + myuuidAsString + "','" + OrderNumTb.Text + "','" + Datelbl.Text + "','" + GuestTb.Text + "'," + OrderAmtLbl.Text + ")";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Order Successfully Created!");
+            Con.Close();
+            populate();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -119,7 +128,7 @@ namespace CafeManagementSystem
                 flag = 0;
             }
             amount = amount + total;
-            LabelAmount.Text = " AUD" + amount.ToString();
+            AmtLbl.Text = amount.ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -136,6 +145,16 @@ namespace CafeManagementSystem
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelAmt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
