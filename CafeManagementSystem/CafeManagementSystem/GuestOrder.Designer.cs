@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.AmtLbl);
             this.panel1.Controls.Add(this.UnitLbl);
             this.panel1.Controls.Add(this.OrderAmtLbl);
@@ -69,9 +71,9 @@
             this.panel1.Controls.Add(this.ItemsGV);
             this.panel1.Controls.Add(this.CatCb);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(136, 40);
+            this.panel1.Location = new System.Drawing.Point(150, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 432);
+            this.panel1.Size = new System.Drawing.Size(600, 450);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -90,7 +92,7 @@
             this.UnitLbl.AutoSize = true;
             this.UnitLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnitLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.UnitLbl.Location = new System.Drawing.Point(430, 403);
+            this.UnitLbl.Location = new System.Drawing.Point(430, 410);
             this.UnitLbl.Name = "UnitLbl";
             this.UnitLbl.Size = new System.Drawing.Size(52, 24);
             this.UnitLbl.TabIndex = 39;
@@ -111,7 +113,7 @@
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Datelbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Datelbl.Location = new System.Drawing.Point(448, 16);
+            this.Datelbl.Location = new System.Drawing.Point(460, 15);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(34, 16);
             this.Datelbl.TabIndex = 24;
@@ -121,7 +123,7 @@
             // QuantityTb
             // 
             this.QuantityTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityTb.Location = new System.Drawing.Point(271, 190);
+            this.QuantityTb.Location = new System.Drawing.Point(300, 200);
             this.QuantityTb.Name = "QuantityTb";
             this.QuantityTb.Size = new System.Drawing.Size(126, 22);
             this.QuantityTb.TabIndex = 23;
@@ -134,7 +136,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(319, 401);
+            this.button2.Location = new System.Drawing.Point(320, 410);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 28);
             this.button2.TabIndex = 22;
@@ -147,7 +149,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(319, 217);
+            this.label3.Location = new System.Drawing.Point(350, 230);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 24);
             this.label3.TabIndex = 21;
@@ -157,10 +159,10 @@
             // OrdersGV
             // 
             this.OrdersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGV.Location = new System.Drawing.Point(189, 244);
+            this.OrdersGV.Location = new System.Drawing.Point(200, 260);
             this.OrdersGV.Name = "OrdersGV";
             this.OrdersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrdersGV.Size = new System.Drawing.Size(363, 154);
+            this.OrdersGV.Size = new System.Drawing.Size(380, 150);
             this.OrdersGV.TabIndex = 20;
             this.OrdersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -170,9 +172,9 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(403, 188);
+            this.button1.Location = new System.Drawing.Point(430, 200);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 26);
+            this.button1.Size = new System.Drawing.Size(110, 25);
             this.button1.TabIndex = 19;
             this.button1.Text = "Add To Cart";
             this.button1.UseVisualStyleBackColor = false;
@@ -192,28 +194,28 @@
             // GuestTb
             // 
             this.GuestTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuestTb.Location = new System.Drawing.Point(33, 126);
+            this.GuestTb.Location = new System.Drawing.Point(35, 130);
             this.GuestTb.Name = "GuestTb";
-            this.GuestTb.Size = new System.Drawing.Size(126, 22);
+            this.GuestTb.Size = new System.Drawing.Size(130, 22);
             this.GuestTb.TabIndex = 17;
             this.GuestTb.Text = "Guest";
             // 
             // OrderNumTb
             // 
             this.OrderNumTb.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderNumTb.Location = new System.Drawing.Point(33, 98);
+            this.OrderNumTb.Location = new System.Drawing.Point(35, 100);
             this.OrderNumTb.Name = "OrderNumTb";
-            this.OrderNumTb.Size = new System.Drawing.Size(126, 22);
+            this.OrderNumTb.Size = new System.Drawing.Size(130, 22);
             this.OrderNumTb.TabIndex = 16;
             this.OrderNumTb.Text = " Order Number";
             // 
             // ItemsGV
             // 
             this.ItemsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ItemsGV.Location = new System.Drawing.Point(189, 39);
+            this.ItemsGV.Location = new System.Drawing.Point(200, 40);
             this.ItemsGV.Name = "ItemsGV";
             this.ItemsGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ItemsGV.Size = new System.Drawing.Size(363, 145);
+            this.ItemsGV.Size = new System.Drawing.Size(380, 150);
             this.ItemsGV.TabIndex = 14;
             this.ItemsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemsGV_CellContentClick);
             // 
@@ -224,9 +226,9 @@
             this.CatCb.Items.AddRange(new object[] {
             "Food",
             "Beverage"});
-            this.CatCb.Location = new System.Drawing.Point(33, 51);
+            this.CatCb.Location = new System.Drawing.Point(35, 40);
             this.CatCb.Name = "CatCb";
-            this.CatCb.Size = new System.Drawing.Size(126, 26);
+            this.CatCb.Size = new System.Drawing.Size(130, 26);
             this.CatCb.TabIndex = 13;
             this.CatCb.Text = "Category";
             this.CatCb.SelectedIndexChanged += new System.EventHandler(this.CatCb_SelectedIndexChanged);
@@ -236,7 +238,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(315, 10);
+            this.label1.Location = new System.Drawing.Point(330, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 12;
@@ -248,7 +250,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(40, 440);
+            this.label4.Location = new System.Drawing.Point(50, 450);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 20);
             this.label4.TabIndex = 8;
@@ -261,19 +263,32 @@
             this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(711, 8);
+            this.label7.Location = new System.Drawing.Point(763, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 27);
             this.label7.TabIndex = 11;
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkBlue;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(70, 70);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(61, 25);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "Refresh";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // GuestOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
-            this.ClientSize = new System.Drawing.Size(784, 496);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -313,5 +328,6 @@
         private System.Windows.Forms.Label OrderAmtLbl;
         private System.Windows.Forms.Label UnitLbl;
         private System.Windows.Forms.Label AmtLbl;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -62,9 +62,9 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(387, 43);
+            this.button5.Location = new System.Drawing.Point(375, 42);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 25);
+            this.button5.Size = new System.Drawing.Size(73, 26);
             this.button5.TabIndex = 46;
             this.button5.Text = "Refresh";
             this.button5.UseVisualStyleBackColor = false;
@@ -77,7 +77,7 @@
             this.CatCb.Items.AddRange(new object[] {
             "Food",
             "Beverage"});
-            this.CatCb.Location = new System.Drawing.Point(247, 42);
+            this.CatCb.Location = new System.Drawing.Point(216, 42);
             this.CatCb.Name = "CatCb";
             this.CatCb.Size = new System.Drawing.Size(126, 26);
             this.CatCb.TabIndex = 45;
@@ -89,7 +89,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(293, 396);
+            this.button1.Location = new System.Drawing.Point(279, 396);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 25);
             this.button1.TabIndex = 44;
@@ -100,7 +100,7 @@
             // OrdersGV
             // 
             this.OrdersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGV.Location = new System.Drawing.Point(149, 74);
+            this.OrdersGV.Location = new System.Drawing.Point(128, 74);
             this.OrdersGV.Name = "OrdersGV";
             this.OrdersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.OrdersGV.Size = new System.Drawing.Size(363, 306);
