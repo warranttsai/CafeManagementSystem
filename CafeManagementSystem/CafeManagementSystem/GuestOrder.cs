@@ -89,7 +89,7 @@ namespace CafeManagementSystem
             Guid myuuid = Guid.NewGuid();
             string myuuidAsString = myuuid.ToString();
             Con.Open();
-            string query = "insert into OrderTbl values('" + myuuidAsString + "','" + OrderNumTb.Text + "','" + Datelbl.Text + "','" + GuestTb.Text + "'," + OrderAmtLbl.Text + ")";
+            string query = "INSERT INTO OrderTbl VALUES('" + myuuidAsString + "','" + OrderNumTb.Text + "','" + Datelbl.Text + "','" + GuestTb.Text + "', '" + AmtLbl.Text + "')";
             SqlCommand cmd = new SqlCommand(query, Con);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Order Successfully Created!");
@@ -169,7 +169,7 @@ namespace CafeManagementSystem
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
-            Datelbl.Text = DateTime.Today.Date.ToString();
+            Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
         }
 
         private void CatCb_SelectedIndexChanged(object sender, EventArgs e)

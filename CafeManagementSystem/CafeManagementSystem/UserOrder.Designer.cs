@@ -136,6 +136,7 @@
             this.QuantityTb.Name = "QuantityTb";
             this.QuantityTb.Size = new System.Drawing.Size(126, 22);
             this.QuantityTb.TabIndex = 23;
+            this.QuantityTb.Text = "Quantity";
             this.QuantityTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button2
@@ -150,6 +151,7 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Place The Order";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 

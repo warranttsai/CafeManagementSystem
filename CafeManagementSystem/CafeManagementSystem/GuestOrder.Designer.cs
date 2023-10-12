@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AmtLbl = new System.Windows.Forms.Label();
+            this.UnitLbl = new System.Windows.Forms.Label();
+            this.OrderAmtLbl = new System.Windows.Forms.Label();
             this.Datelbl = new System.Windows.Forms.Label();
             this.QuantityTb = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,9 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.OrderAmtLbl = new System.Windows.Forms.Label();
-            this.UnitLbl = new System.Windows.Forms.Label();
-            this.AmtLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -75,6 +75,37 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // AmtLbl
+            // 
+            this.AmtLbl.AutoSize = true;
+            this.AmtLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.AmtLbl.Location = new System.Drawing.Point(488, 403);
+            this.AmtLbl.Name = "AmtLbl";
+            this.AmtLbl.Size = new System.Drawing.Size(0, 24);
+            this.AmtLbl.TabIndex = 40;
+            // 
+            // UnitLbl
+            // 
+            this.UnitLbl.AutoSize = true;
+            this.UnitLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnitLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.UnitLbl.Location = new System.Drawing.Point(430, 403);
+            this.UnitLbl.Name = "UnitLbl";
+            this.UnitLbl.Size = new System.Drawing.Size(52, 24);
+            this.UnitLbl.TabIndex = 39;
+            this.UnitLbl.Text = "AUD";
+            // 
+            // OrderAmtLbl
+            // 
+            this.OrderAmtLbl.AutoSize = true;
+            this.OrderAmtLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderAmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.OrderAmtLbl.Location = new System.Drawing.Point(448, 403);
+            this.OrderAmtLbl.Name = "OrderAmtLbl";
+            this.OrderAmtLbl.Size = new System.Drawing.Size(0, 18);
+            this.OrderAmtLbl.TabIndex = 25;
+            // 
             // Datelbl
             // 
             this.Datelbl.AutoSize = true;
@@ -94,6 +125,7 @@
             this.QuantityTb.Name = "QuantityTb";
             this.QuantityTb.Size = new System.Drawing.Size(126, 22);
             this.QuantityTb.TabIndex = 23;
+            this.QuantityTb.Text = "Quantity";
             this.QuantityTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button2
@@ -235,37 +267,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // OrderAmtLbl
-            // 
-            this.OrderAmtLbl.AutoSize = true;
-            this.OrderAmtLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderAmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.OrderAmtLbl.Location = new System.Drawing.Point(448, 403);
-            this.OrderAmtLbl.Name = "OrderAmtLbl";
-            this.OrderAmtLbl.Size = new System.Drawing.Size(0, 18);
-            this.OrderAmtLbl.TabIndex = 25;
-            // 
-            // UnitLbl
-            // 
-            this.UnitLbl.AutoSize = true;
-            this.UnitLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnitLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.UnitLbl.Location = new System.Drawing.Point(430, 403);
-            this.UnitLbl.Name = "UnitLbl";
-            this.UnitLbl.Size = new System.Drawing.Size(52, 24);
-            this.UnitLbl.TabIndex = 39;
-            this.UnitLbl.Text = "AUD";
-            // 
-            // AmtLbl
-            // 
-            this.AmtLbl.AutoSize = true;
-            this.AmtLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmtLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.AmtLbl.Location = new System.Drawing.Point(488, 403);
-            this.AmtLbl.Name = "AmtLbl";
-            this.AmtLbl.Size = new System.Drawing.Size(0, 24);
-            this.AmtLbl.TabIndex = 40;
             // 
             // GuestOrder
             // 

@@ -132,6 +132,20 @@ namespace CafeManagementSystem
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Place The Order Button
+            Guid myuuid = Guid.NewGuid();
+            string myuuidAsString = myuuid.ToString();
+            Con.Open();
+            string query = "INSERT INTO OrderTbl VALUES('" + myuuidAsString + "','" + OrderNumTb.Text + "','" + Datelbl.Text + "','" + SellerNameTb.Text + "', '" + AmtLbl.Text + "')";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Order Successfully Created!");
+            Con.Close();
+            populate();
+        }
+
         DataTable table = new DataTable();
         int flag = 0;
         private void UserOrder_Load(object sender, EventArgs e)
@@ -143,7 +157,7 @@ namespace CafeManagementSystem
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
-            Datelbl.Text = DateTime.Today.Date.ToString();
+            Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
         }
         private void ItemGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
