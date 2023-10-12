@@ -41,6 +41,26 @@ namespace CafeManagementSystem
             }
             Con.Close();
         }
+        void filterByCategory()
+        {
+            Console.WriteLine("Filtering DB data");
+            Con.Open();
+            string query = "SELECT * FROM ItemTbl WHERE ItemCat = '" + CatCb.SelectedItem.ToString() + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            // Verify if the dataset contains any data
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                OrdersGV.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                Console.WriteLine("No data found in the database.");
+            }
+            Con.Close();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -49,6 +69,16 @@ namespace CafeManagementSystem
         private void ViewOrders_Load(object sender, EventArgs e)
         {
             populateOrders();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            filterByCategory();
+        }
+
+        private void OrdersGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

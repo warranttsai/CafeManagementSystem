@@ -145,12 +145,17 @@ namespace CafeManagementSystem
             Con.Close();
             // Refresh the data
             populate();
-            populateOrders();
         }
 
         private void OrdersGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ViewOrders viewOrders = new ViewOrders();
+            viewOrders.Show();
         }
 
         DataTable table = new DataTable();
@@ -165,7 +170,6 @@ namespace CafeManagementSystem
             table.Columns.Add("UnitPrice", typeof(int));
             table.Columns.Add("Total", typeof(int));
             OrdersGV.DataSource = table;
-            populateOrders();
             // Setting date label
             Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
             // Replace the text of Seller TextBox to user name

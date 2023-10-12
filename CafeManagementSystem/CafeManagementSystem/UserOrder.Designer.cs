@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
@@ -82,6 +83,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.AmtLbl);
             this.panel1.Controls.Add(this.UnitLbl);
             this.panel1.Controls.Add(this.Datelbl);
@@ -300,6 +302,20 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkBlue;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(228, 401);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(111, 28);
+            this.button6.TabIndex = 42;
+            this.button6.Text = "View Orders";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // UserOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -348,5 +364,6 @@
         private System.Windows.Forms.Label Datelbl;
         private System.Windows.Forms.Label UnitLbl;
         private System.Windows.Forms.Label AmtLbl;
+        private System.Windows.Forms.Button button6;
     }
 }

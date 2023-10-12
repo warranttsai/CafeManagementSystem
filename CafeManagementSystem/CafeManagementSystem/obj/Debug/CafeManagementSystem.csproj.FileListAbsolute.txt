@@ -12,3 +12,4 @@ F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagem
 F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.UserOrder.resources
 F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.ItemsForm.resources
 F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.UsersForm.resources
+F:\OneDrive\桌面\project\CafeManagementSystem\CafeManagementSystem\CafeManagementSystem\obj\Debug\CafeManagementSystem.ViewOrders.resources

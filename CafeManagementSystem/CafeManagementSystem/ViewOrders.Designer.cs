@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.AmtLbl = new System.Windows.Forms.Label();
-            this.LabelAmount = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.CatCb = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.OrdersGV = new System.Windows.Forms.DataGridView();
             this.ListOfOrdersLbl = new System.Windows.Forms.Label();
+            this.AmtLbl = new System.Windows.Forms.Label();
+            this.LabelAmount = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersGV)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +44,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.CatCb);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.OrdersGV);
             this.panel1.Controls.Add(this.ListOfOrdersLbl);
@@ -51,6 +55,68 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(615, 436);
             this.panel1.TabIndex = 13;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkBlue;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(387, 43);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(61, 25);
+            this.button5.TabIndex = 46;
+            this.button5.Text = "Refresh";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // CatCb
+            // 
+            this.CatCb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatCb.FormattingEnabled = true;
+            this.CatCb.Items.AddRange(new object[] {
+            "Food",
+            "Beverage"});
+            this.CatCb.Location = new System.Drawing.Point(247, 42);
+            this.CatCb.Name = "CatCb";
+            this.CatCb.Size = new System.Drawing.Size(126, 26);
+            this.CatCb.TabIndex = 45;
+            this.CatCb.Text = "Category";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(293, 396);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 25);
+            this.button1.TabIndex = 44;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // OrdersGV
+            // 
+            this.OrdersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OrdersGV.Location = new System.Drawing.Point(149, 74);
+            this.OrdersGV.Name = "OrdersGV";
+            this.OrdersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.OrdersGV.Size = new System.Drawing.Size(363, 306);
+            this.OrdersGV.TabIndex = 43;
+            this.OrdersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OrdersGV_CellContentClick);
+            // 
+            // ListOfOrdersLbl
+            // 
+            this.ListOfOrdersLbl.AutoSize = true;
+            this.ListOfOrdersLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListOfOrdersLbl.ForeColor = System.Drawing.Color.DarkBlue;
+            this.ListOfOrdersLbl.Location = new System.Drawing.Point(262, 15);
+            this.ListOfOrdersLbl.Name = "ListOfOrdersLbl";
+            this.ListOfOrdersLbl.Size = new System.Drawing.Size(142, 24);
+            this.ListOfOrdersLbl.TabIndex = 42;
+            this.ListOfOrdersLbl.Text = "List Of Orders";
             // 
             // AmtLbl
             // 
@@ -72,26 +138,6 @@
             this.LabelAmount.Size = new System.Drawing.Size(0, 18);
             this.LabelAmount.TabIndex = 18;
             // 
-            // OrdersGV
-            // 
-            this.OrdersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGV.Location = new System.Drawing.Point(149, 42);
-            this.OrdersGV.Name = "OrdersGV";
-            this.OrdersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrdersGV.Size = new System.Drawing.Size(363, 338);
-            this.OrdersGV.TabIndex = 43;
-            // 
-            // ListOfOrdersLbl
-            // 
-            this.ListOfOrdersLbl.AutoSize = true;
-            this.ListOfOrdersLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListOfOrdersLbl.ForeColor = System.Drawing.Color.DarkBlue;
-            this.ListOfOrdersLbl.Location = new System.Drawing.Point(262, 15);
-            this.ListOfOrdersLbl.Name = "ListOfOrdersLbl";
-            this.ListOfOrdersLbl.Size = new System.Drawing.Size(142, 24);
-            this.ListOfOrdersLbl.TabIndex = 42;
-            this.ListOfOrdersLbl.Text = "List Of Orders";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -103,20 +149,6 @@
             this.label7.Size = new System.Drawing.Size(25, 27);
             this.label7.TabIndex = 44;
             this.label7.Text = "X";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(293, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 25);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ViewOrders
             // 
@@ -148,5 +180,7 @@
         private System.Windows.Forms.Label ListOfOrdersLbl;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox CatCb;
     }
 }
