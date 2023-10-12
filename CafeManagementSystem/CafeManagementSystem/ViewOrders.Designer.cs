@@ -100,10 +100,10 @@
             // OrdersGV
             // 
             this.OrdersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGV.Location = new System.Drawing.Point(128, 74);
+            this.OrdersGV.Location = new System.Drawing.Point(40, 75);
             this.OrdersGV.Name = "OrdersGV";
             this.OrdersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrdersGV.Size = new System.Drawing.Size(363, 306);
+            this.OrdersGV.Size = new System.Drawing.Size(540, 300);
             this.OrdersGV.TabIndex = 43;
             this.OrdersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OrdersGV_CellContentClick);
             // 
